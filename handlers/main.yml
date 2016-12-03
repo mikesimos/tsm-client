@@ -1,0 +1,6 @@
+---
+# handlers file for tsm-client
+ - name: start and enable tsm-client
+   service: name=dsmcad
+           state=started
+           enabled=yes

@@ -1,0 +1,25 @@
+---
+# defaults file for tsm-client
+
+tsm_packages_EL:
+ - { package: "TIVsm-BA" }
+ - { package: "TIVsm-API64" }
+
+
+comm_method: TCPip
+tcp_port: 1500
+dsm_sys_path: /opt/tivoli/tsm/client/ba/bin/dsm.sys
+dsm_opt_path: /opt/tivoli/tsm/client/ba/bin/dsm.opt
+inclexcl_path: /opt/tivoli/tsm/client/ba/bin/InclExcl
+inclexcl_local_path: /opt/tivoli/tsm/client/ba/bin/InclExcl.local
+tsm_pwd_path: /etc/adsm/TSM.PWD
+
+tsm_server_name: example_tsm_server_name
+tsm_server_address: tsmserver.example.com
+tsm_server_password: default_password
+tsm_server_admin_username: default_admin_username
+tsm_policy_name: default_policy_name
+tsm_policy_domain: defaut_policy_domain
+maxnummp: 50
+backdelete: 'yes'
+archdelete: 'yes'

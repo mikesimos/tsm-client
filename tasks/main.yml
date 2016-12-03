@@ -1,0 +1,7 @@
+- name: ''
+  include: install.yml
+  when: state|default('present') == "present"
+
+- name: '' 
+  include: uninstall.yml
+  when: state|default('present') == "absent"

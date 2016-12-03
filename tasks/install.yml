@@ -1,0 +1,10 @@
+---
+
+- name: Install tsm-client packages
+  yum: name={{ item.package }}
+       state=present
+  with_items: "{{ tsm_packages_EL }}"
+
+- name: Include configuration tasks...
+  include: configure.yml
+
