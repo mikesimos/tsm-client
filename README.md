@@ -1,9 +1,8 @@
+# Ansible Role: TSM-client
+
 [![Build Status](https://travis-ci.org/mikeSimos/tsm-client.svg?branch=master)](https://travis-ci.org/mikeSimos/tsm-client)
-TSM-CLIENT
-=========
 
-The role installs and configures tsm client for RHEL and CentOS servers.
-
+Installs and configures tsm client for RHEL and CentOS servers.
 
 Requirements
 ------------
