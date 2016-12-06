@@ -52,6 +52,25 @@ Example Playbook
 
 ```
 
+Uninstall
+---------------
+
+```yaml
+- hosts: example.com
+  become: true
+  vars:
+      tsm_server_password: TSM_SERVER_PASSWORD
+      tsm_server_address: tsm.server.fqnd.com
+      tsm_server_name: SERVER_NAME
+      tsm_server_admin_username: ADMIN_USERNAME
+      tsm_policy_name: DAILY_INCREMENTAL_LINUX
+      tsm_policy_domain: TSM_POLICY_DOMAIN
+  roles:
+    - tsm-client/uninstall
+
+```
+
+
 License
 -------
 
