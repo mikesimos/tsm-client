@@ -1,0 +1,6 @@
+---
+
+- name: Uninstall tsm-client 
+  yum: name={{ item.package }}
+       state=removed
+  with_items: "{{ tsm_packages_EL }}"
